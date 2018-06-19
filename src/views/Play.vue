@@ -1,6 +1,6 @@
 <template>
     <div class="play" v-if="!gameOver && !won">
-        <h1>Play {{ lives }}</h1>
+        <h1>Lives: {{ lives }}</h1>
         <h2>{{ current }}</h2>
         <input type="text" maxlength="1" autofocus v-model="input" @keyup.enter="guess">
         <div class="guessed">
